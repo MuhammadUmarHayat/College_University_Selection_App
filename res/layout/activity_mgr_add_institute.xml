@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MgrAddInstitute">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Institute Information"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Manager name"
+        android:textColorHint="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/Adminmgr1NameTv2Mgr"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"></EditText>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/photo1Mgr"
+        android:src="@drawable/ic_launcher_foreground"></ImageView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Full name of Institute"
+                android:id="@+id/AdminetInstituteNamesMgr"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Link"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:id="@+id/AdminetInstituteLinkMgr"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+
+
+
+        <TableRow>
+
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/level"
+                android:hint="Medium"
+                android:background="@color/white"
+                android:textColor="@color/orange"
+                android:id="@+id/AdminspInstLevelMgr"
+                android:layout_column="1"></Spinner>
+
+        </TableRow>
+
+        <TableRow>
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/medium"
+                android:hint="Medium"
+                android:background="@color/white"
+                android:textColor="@color/orange"
+                android:id="@+id/AdminspInstMediumMgr"
+                android:layout_column="0"></Spinner>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter City"
+                android:textColorHint="@color/white"
+                android:id="@+id/AdminetInstCityMgr"
+                android:textColor="@color/white"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Address"
+                android:id="@+id/AdminetInsAddressMgr"
+                android:textColor="@color/white"
+                android:layout_span="2"
+                android:layout_column="0"></EditText>
+
+        </TableRow>
+
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Save"
+                android:id="@+id/AdminbtnInsSaveMgr"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/dark"
+                android:layout_column="0"></Button>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/black"
+                android:text="Back"
+                android:layout_margin="10dp"
+                android:id="@+id/AdminbtnInsBacksMgr"
+                android:textColor="@color/white"
+                android:layout_column="1"></Button>
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

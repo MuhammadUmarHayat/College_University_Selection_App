@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddPrograms">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/g1"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add Program Information"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Enter Program Name"
+                android:id="@+id/Adminetprorgram"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Duration"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:id="@+id/AdminetDuration"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Semester Name"
+                android:background="@color/white"
+                android:textColor="@color/orange"
+                android:id="@+id/AdminetSemsesterName"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Starting Date"
+                android:textColorHint="@color/white"
+                android:id="@+id/AdminetStartingDate"
+                android:textColor="@color/white"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Closing Date"
+                android:id="@+id/AdminetClosingDate"
+                android:textColor="@color/white"
+
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Institute Name"
+                android:id="@+id/AdminetInstituteName"
+                android:textColor="@color/white"
+                android:layout_column="1"></EditText>
+
+        </TableRow>
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Manager Name"
+                android:id="@+id/AdminetMgrname"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Total Seats"
+                android:id="@+id/AdminetTotalSeats"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+
+
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Save"
+                android:id="@+id/AdminbtnPrgSave"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/dark"
+                android:layout_column="0"></Button>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/black"
+                android:text="Back"
+                android:layout_margin="10dp"
+                android:id="@+id/AdminbtnPrgBack"
+                android:textColor="@color/white"
+                android:layout_column="1"></Button>
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

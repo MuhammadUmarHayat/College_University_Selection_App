@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerRegistration">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Registration Form"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        ></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Full name"
+                android:id="@+id/AdminetNames"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Father Name"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:id="@+id/AdminetFatherNames"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/gender"
+                android:hint="Gender"
+                android:background="@color/white"
+                android:textColor="@color/orange"
+                android:id="@+id/AdminspGenders"
+                android:layout_column="0"></Spinner>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter CNIC"
+                android:textColorHint="@color/white"
+                android:id="@+id/AdminetCNICs"
+                android:textColor="@color/white"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="address"
+                android:id="@+id/AdminetAddresss"
+                android:textColor="@color/white"
+                android:layout_span="2"
+                android:layout_column="0"></EditText>
+
+        </TableRow>
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Email"
+                android:id="@+id/AdminetEmails"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:inputType="textPassword"
+                android:id="@+id/AdminetPws"
+                android:layout_column="1"></EditText>
+
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Register Now"
+                android:id="@+id/AdminbtnSignups"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark"
+                android:layout_margin="10dp"
+                android:layout_column="0"></Button>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Back"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/black"
+                android:id="@+id/AdminbtnBacks"
+                android:textColor="@color/white"
+                android:layout_column="1"></Button>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

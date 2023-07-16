@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/blue_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdmissionRequest">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit request for addmission"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Enter Student CNIC "
+                android:id="@+id/tvAdminetClosingDate"
+                android:textColor="@color/white"
+
+                android:layout_column="0"></TextView>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:background="@color/white"
+                android:hint="Enter student ID/CNIC"
+                android:id="@+id/etStudentID"
+                android:textColor="@color/black"
+                android:layout_column="1"></EditText>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Program name"
+                android:textColor="@color/white"
+                android:layout_column="0"></TextView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:id="@+id/tvprorgramName"
+                android:textColor="@color/white"
+                android:layout_column="1"></TextView>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Institute name"
+                android:textColor="@color/white"
+                android:layout_column="0"></TextView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:id="@+id/tvInstituteName"
+                android:textColor="@color/white"
+                android:layout_column="1"></TextView>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Semester"
+                android:textColor="@color/white"
+                android:layout_column="0"></TextView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:id="@+id/tvProgramSemester"
+                android:textColor="@color/white"
+                android:layout_column="1"></TextView>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Duration"
+                android:textColor="@color/white"
+                android:layout_column="0"></TextView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:id="@+id/tvProgramDuration"
+                android:textColor="@color/white"
+                android:layout_column="1"></TextView>
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Program number"
+                android:textColor="@color/white"
+                android:layout_column="0"></TextView>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:id="@+id/tvProgramID"
+                android:textColor="@color/white"
+                android:layout_column="1"></TextView>
+        </TableRow>
+
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Submit"
+                android:id="@+id/btnPrgSubmit"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/dark"
+                android:layout_column="0"></Button>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/black"
+                android:text="Back"
+                android:layout_margin="10dp"
+                android:id="@+id/btnPrgBack"
+                android:textColor="@color/white"
+                android:layout_column="1"></Button>
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/g2">
+
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Student Panel"
+        android:id="@+id/tvStudentID"
+        android:layout_gravity="center"
+        android:textAlignment="center">
+    </TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <!--            <TextView android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:textColorHint="@color/white"-->
+            <!--                android:hint="Select City"-->
+            <!--                android:id="@+id/tv1"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                android:layout_column="0"></TextView>-->
+            <!--            <Spinner-->
+            <!--                android:id="@+id/spinnerCity"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_column="1"-->
+            <!--                />-->
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Select Program"
+                android:id="@+id/tv2"
+                android:textColor="@color/white"
+                android:layout_column="0"></TextView>
+            <Spinner
+                android:id="@+id/spinnerProgram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/btnSearch"
+                android:text="Search"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/dark"
+                android:layout_column="0">
+
+            </Button>
+            <Button android:id="@+id/btnallinstitutes"
+                android:layout_margin="5dp"
+                android:text="View All"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/dark"
+                android:layout_column="1"
+                ></Button>
+        </TableRow>
+
+
+
+        <TableRow>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/dark"
+                android:id="@+id/btnviewNotification"
+                android:text="view Notification"
+                android:layout_column="0"
+                ></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/dark"
+                android:id="@+id/btnAddEducation"
+                android:text="Add Education"
+                android:layout_column="1"
+                ></Button>
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark"
+            android:id="@+id/btnLogout"
+            android:text="Logout"
+            ></Button>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

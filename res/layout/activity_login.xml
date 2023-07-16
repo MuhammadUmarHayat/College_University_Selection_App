@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    tools:context=".login">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/g1"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginTop="10dp"
+
+        android:fontFamily="sans-serif"
+      android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_margin="50dp">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center">
+            <Spinner android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/users"
+                android:hint="Gender"
+                android:background="@color/white"
+                android:textColor="@color/orange"
+                android:id="@+id/spusertype"
+                android:layout_column="0"></Spinner>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="User ID"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="50"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hint="Enter User id"
+                    android:textColorHint="@color/white"
+                    android:id="@+id/lgEd1"
+                    android:textColor="@color/white"
+                    android:layout_column="2" />
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:text="Passowrd "
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="50"
+                    android:layout_column="1" />
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:id="@+id/lgEd2"
+                    android:textColorHint="@color/white"
+                    android:layout_column="2" />
+
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="50"
+                    android:backgroundTint="@color/dark"
+                    android:id="@+id/btnloginlg"
+                    android:layout_margin="10dp"
+                    android:layout_column="1" />
+
+                <Button
+                    android:text="Back"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textFontWeight="50"
+                    android:backgroundTint="@color/black"
+                    android:layout_margin="10dp"
+                    android:id="@+id/btnBacklg"
+                    android:layout_column="2" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

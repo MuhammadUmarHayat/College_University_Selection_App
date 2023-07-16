@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    tools:context=".EditProgram">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv12"
+        android:layout_gravity="center"
+        android:text="Edit Program Information"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"></TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Enter Program Name"
+                android:id="@+id/EditetprorgramName"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Duration"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:id="@+id/EditetDuration"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Semester Name"
+                android:background="@color/white"
+                android:textColor="@color/orange"
+                android:id="@+id/EditetSemsesterName"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Starting Date"
+                android:textColorHint="@color/white"
+                android:id="@+id/EditetStartingDate"
+                android:textColor="@color/white"
+                android:layout_column="1"></EditText>
+        </TableRow>
+
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Closing Date"
+                android:id="@+id/EditetClosingDate"
+                android:textColor="@color/white"
+
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Institute Name"
+                android:id="@+id/EditetInstituteName"
+                android:textColor="@color/white"
+                android:layout_column="1"></EditText>
+
+        </TableRow>
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Manager Name"
+                android:id="@+id/EditetMgrname"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:hint="Total Seats"
+                android:id="@+id/EditetTotalSeats"
+                android:textColor="@color/white"
+                android:layout_column="0"></EditText>
+
+
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:text="Save"
+                android:id="@+id/btnPrgSaveEdit"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/dark"
+                android:layout_column="0"></Button>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/black"
+                android:text="Back"
+                android:layout_margin="10dp"
+                android:id="@+id/btnPrgBackEdit"
+                android:textColor="@color/white"
+                android:layout_column="1"></Button>
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>

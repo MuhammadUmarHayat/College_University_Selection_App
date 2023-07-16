@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_back"
+    tools:context=".Manager">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager Pannel"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager Pannel"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/mgrNameTv"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark"></TextView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/dark"
+        android:id="@+id/btAddInstitute"
+
+        android:textColor="@color/white"
+        android:text="Add Intitute Information"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:backgroundTint="@color/dark"
+        android:id="@+id/btInstituteDetails"
+        android:textColor="@color/white"
+        android:text="View Institute Details"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/dark"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnAddPrograms"
+        android:textColor="@color/white"
+        android:text="Add Programms"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/dark"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnMgrViewProgramsList"
+        android:textColor="@color/white"
+        android:text="List of Programs"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/dark"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnViewCandidateList"
+        android:textColor="@color/white"
+        android:text="View List of Candidates"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:backgroundTint="@color/dark"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btnMgrLogout"
+        android:textColor="@color/white"
+        android:text="Logout"></Button>
+
+
+
+</LinearLayout>
